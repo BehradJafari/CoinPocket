@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fb3730</color>
+    <color name="back">#d4d9e2</color>
+    <color name="colorPrimaryDark">#fff263</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="increase">#63e17c</color>
+    <color name="decrease">#e94f37</color>
+    <color name="coins">#123</color>
+</resources>

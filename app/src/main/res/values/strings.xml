@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CoinPocket</string>
+    <string name="api_url">https://api.coinmarketcap.com/v1/ticker/?limit=10</string>
+</resources>
