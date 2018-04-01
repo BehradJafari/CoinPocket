@@ -14,17 +14,36 @@
         android:largeHeap="true"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".SplashActivity">
+        android:theme="@style/AppTheme.NoActionBar"
+        android:fullBackupContent="true"
+        >
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--&lt;!&ndash; Accepts URIs that begin with "java-lang-programming://android-app-google-plus-demo" &#45;&#45; >-->
+                <data android:scheme="http"
+                    android:host="www.hamiss.ir"
+                    android:pathPrefix="/about" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListOfCoins" />
-        <activity android:name=".ShowCoin" />
-        <activity android:name=".NoConnection"></activity>
+        <activity android:name=".ListOfCoins"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ShowCoin"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NoConnection"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>
